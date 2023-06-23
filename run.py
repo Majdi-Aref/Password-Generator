@@ -51,3 +51,19 @@ def get_characters_source(has_numbers, has_special_chars):
         characters_source += string.punctuation
     return characters_source
 
+
+def generate_password(minimum_length, characters_source, has_numbers, has_special_chars):
+    password = ""
+    while True:
+        for _ in range(minimum_length):
+            character_to_add = random.choice(characters_source) 
+            password += character_to_add
+        contains_digits = any(char.isdigit() for char in password)
+        if has_numbers == True and contains_digits == False: 
+            continue
+        contains_special_characters = any(char in string.punctuation for char in password)
+        if has_special_chars == True and contains_special_characters == False:
+            continue
+        return password
+
+
