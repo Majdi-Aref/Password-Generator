@@ -77,4 +77,4 @@ def main():
     print(f"Your requested password is: {password}")
 
 
-
+main()
