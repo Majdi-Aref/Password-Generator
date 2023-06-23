@@ -42,3 +42,12 @@ def does_user_want_special_characters():
             continue
 
 
+def get_characters_source(has_numbers, has_special_chars):
+    """Specifies the characters set from which a password can be generated"""
+    characters_source = string.ascii_letters
+    if has_numbers == True:
+        characters_source += string.digits
+    if has_special_chars == True:
+        characters_source += string.punctuation
+    return characters_source
+
