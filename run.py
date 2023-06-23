@@ -1,6 +1,5 @@
 """
-Import random and string modules to be able to construct a password randomly using letters, 
-numbers, and special characters
+Import random and string modules to be able to construct a password randomly using letters, numbers, and special characters
 """
 import random
 import string
@@ -56,10 +55,10 @@ def generate_password(minimum_length, characters_source, has_numbers, has_specia
     password = ""
     while True:
         for _ in range(minimum_length):
-            character_to_add = random.choice(characters_source) 
+            character_to_add = random.choice(characters_source)
             password += character_to_add
         contains_digits = any(char.isdigit() for char in password)
-        if has_numbers == True and contains_digits == False: 
+        if has_numbers == True and contains_digits == False:
             continue
         contains_special_characters = any(char in string.punctuation for char in password)
         if has_special_chars == True and contains_special_characters == False:
