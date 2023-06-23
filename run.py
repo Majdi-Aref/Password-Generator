@@ -19,12 +19,24 @@ def get_password_minimum_length():
 
 
 def does_user_want_numbers():
-    """Checks if a user wants to include numbers in their password"""
+    """Checks whether a user wants to include numbers in their password"""
     while True:
         does_user_want_numbers = input("Do you want to have numbers in your password? Please type in 'y' or 'n'.").lower()
         if does_user_want_numbers == "y":
             return True
         elif does_user_want_numbers == "n":
+            return False
+        else:
+            continue
+
+
+def does_user_want_special_characters():
+    """Checks whether a user wants to include special characters in their password"""
+    while True:
+        does_user_want_special_characters = input("Do you want to have special characters in your password? Please type in 'y' or 'n'.").lower()
+        if does_user_want_special_characters == "y":
+            return True
+        elif does_user_want_special_characters == "n":
             return False
         else:
             continue
