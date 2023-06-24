@@ -8,7 +8,7 @@ import string
 def get_password_minimum_length():
     """Gets a user's desired minimum number of characters of their password"""
     while True:
-        minimum_length_user_input = input("Enter a number that represents the minimum length of the password that you want; the number must be greater than 5: ")
+        minimum_length_user_input = input("Enter a number that represents the minimum length of the password that you want; the number must be greater than 5:\n")
         if minimum_length_user_input.isdigit() == False:
             continue
         desired_minimum_length = int(minimum_length_user_input)
@@ -20,7 +20,7 @@ def get_password_minimum_length():
 def does_user_want_numbers():
     """Checks whether a user wants to include numbers in their password"""
     while True:
-        does_user_want_numbers = input("Do you want to have numbers in your password? Please type in 'y' or 'n'.").lower()
+        does_user_want_numbers = input("Do you want to have numbers in your password? Please type in 'y' or 'n'.\n").lower()
         if does_user_want_numbers == "y":
             return True
         elif does_user_want_numbers == "n":
@@ -32,7 +32,7 @@ def does_user_want_numbers():
 def does_user_want_special_characters():
     """Checks whether a user wants to include special characters in their password"""
     while True:
-        does_user_want_special_characters = input("Do you want to have special characters in your password? Please type in 'y' or 'n'.").lower()
+        does_user_want_special_characters = input("Do you want to have special characters in your password? Please type in 'y' or 'n'.\n").lower()
         if does_user_want_special_characters == "y":
             return True
         elif does_user_want_special_characters == "n":
