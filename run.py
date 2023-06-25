@@ -4,11 +4,16 @@ Import random and string modules to be able to construct a password randomly usi
 import random
 import string
 
+import colorama
+from colorama import Fore, Back, Style
+
+colorama.init(autoreset=True)
+
 
 def get_password_minimum_length():
     """Gets a user's desired minimum number of characters of their password"""
     while True:
-        minimum_length_user_input = input("Enter a number that represents the minimum length of the password that you want; the number must be greater than 5:\n")
+        minimum_length_user_input = input(Fore.CYAN + "Enter a number that represents the minimum length of the password that you want; the number must be greater than 5:\n")
         if minimum_length_user_input.isdigit() == False:
             print("Error! You entered letters and/or special characters.")
             continue
