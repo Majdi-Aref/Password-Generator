@@ -10,9 +10,11 @@ def get_password_minimum_length():
     while True:
         minimum_length_user_input = input("Enter a number that represents the minimum length of the password that you want; the number must be greater than 5:\n")
         if minimum_length_user_input.isdigit() == False:
+            print("Error! You entered letters and/or special characters.")
             continue
         desired_minimum_length = int(minimum_length_user_input)
         if desired_minimum_length < 6:
+            print("Error! You entered a number that is not greater than 5.")
             continue
         return desired_minimum_length
 
@@ -26,6 +28,7 @@ def does_user_want_numbers():
         elif does_user_want_numbers == "n":
             return False
         else:
+            print("Error! You entered neither 'y' nor 'n'.")
             continue
 
 
@@ -38,6 +41,7 @@ def does_user_want_special_characters():
         elif does_user_want_special_characters == "n":
             return False
         else:
+            print("Error! You entered neither 'y' nor 'n'.")
             continue
 
 
