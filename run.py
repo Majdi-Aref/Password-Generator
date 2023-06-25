@@ -6,8 +6,7 @@ import string
 
 import colorama
 from colorama import Fore, Back, Style
-
-colorama.init(autoreset=True)
+colorama.init()
 
 
 def get_password_minimum_length():
@@ -15,11 +14,11 @@ def get_password_minimum_length():
     while True:
         minimum_length_user_input = input(Fore.CYAN + "Enter a number that represents the minimum length of the password that you want; the number must be greater than 5:\n")
         if minimum_length_user_input.isdigit() == False:
-            print("Error! You entered letters and/or special characters.")
+            print(Fore.RED + "Error! You entered letters and/or special characters.")
             continue
         desired_minimum_length = int(minimum_length_user_input)
         if desired_minimum_length < 6:
-            print("Error! You entered a number that is not greater than 5.")
+            print(Fore.RED + "Error! You entered a number that is not greater than 5.")
             continue
         return desired_minimum_length
 
@@ -27,26 +26,26 @@ def get_password_minimum_length():
 def does_user_want_numbers():
     """Checks whether a user wants to include numbers in their password"""
     while True:
-        does_user_want_numbers = input("Do you want to have numbers in your password? Please type in 'y' or 'n'.\n").lower()
+        does_user_want_numbers = input(Fore.CYAN + "Do you want to have numbers in your password? Please type in 'y' or 'n'.\n").lower()
         if does_user_want_numbers == "y":
             return True
         elif does_user_want_numbers == "n":
             return False
         else:
-            print("Error! You entered neither 'y' nor 'n'.")
+            print(Fore.RED + "Error! You entered neither 'y' nor 'n'.")
             continue
 
 
 def does_user_want_special_characters():
     """Checks whether a user wants to include special characters in their password"""
     while True:
-        does_user_want_special_characters = input("Do you want to have special characters in your password? Please type in 'y' or 'n'.\n").lower()
+        does_user_want_special_characters = input(Fore.CYAN + "Do you want to have special characters in your password? Please type in 'y' or 'n'.\n").lower()
         if does_user_want_special_characters == "y":
             return True
         elif does_user_want_special_characters == "n":
             return False
         else:
-            print("Error! You entered neither 'y' nor 'n'.")
+            print(Fore.RED + "Error! You entered neither 'y' nor 'n'.")
             continue
 
 
@@ -82,7 +81,7 @@ def main():
     has_special_chars = does_user_want_special_characters()
     characters_source = get_characters_source(has_numbers, has_special_chars)
     password = generate_password(minimum_length, characters_source, has_numbers, has_special_chars)
-    print(f"Your requested password is: {password}")
+    print(Fore.GREEN + "Your requested password is:", Fore.YELLOW + f"{password}")
 
 
 main()
