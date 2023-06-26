@@ -98,8 +98,13 @@ def main():
     has_numbers = does_user_want_numbers()
     has_special_chars = does_user_want_special_characters()
     characters_source = get_characters_source(has_numbers, has_special_chars)
-    password = generate_password(minimum_length, characters_source, has_numbers, has_special_chars)
-    print(Fore.GREEN + "Your requested password is:\n" + Fore.YELLOW + password)
+    password = (
+        generate_password(minimum_length, characters_source,
+                          has_numbers, has_special_chars)
+    )
+    print(
+        (Fore.GREEN + "Your requested password is:\n" + Fore.YELLOW + password)
+    )
 
 
 main()
