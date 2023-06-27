@@ -1,6 +1,6 @@
 """
 Import random and string modules to be able to construct a
-password randomly using letters, numbers, and special characters
+password randomly using letters, numbers, and special characters.
 """
 import random
 import string
@@ -11,7 +11,12 @@ colorama.init()
 
 
 def get_password_minimum_length():
-    """Gets a user's desired minimum number of characters of their password"""
+    """
+    Gets a user's desired minimum number of characters of their password.
+
+    Returns:
+        integer: minimum length of the password
+    """
     while True:
         minimum_length_user_input = (
             input(Fore.CYAN + "Enter a number "
@@ -31,7 +36,13 @@ def get_password_minimum_length():
 
 
 def does_user_want_numbers():
-    """Checks whether a user wants to include numbers in their password"""
+    """
+    Checks whether a user wants to include numbers in their password.
+
+    Returns:
+        boolean: True if user wants to include numbers,
+            otherwise it returns False
+    """
     while True:
         does_user_want_numbers = (
             input(Fore.CYAN + "Do you want to "
@@ -48,8 +59,14 @@ def does_user_want_numbers():
 
 
 def does_user_want_special_characters():
-    """Checks whether a user wants to include
-       special characters in their password"""
+    """
+    Checks whether a user wants to include special characters
+    in their password.
+
+    Returns:
+        boolean: True if user wants to include special characters,
+            otherwise it returns False
+    """
     while True:
         does_user_want_special_characters = (
             input(Fore.CYAN + "Do you want to have "
@@ -66,7 +83,18 @@ def does_user_want_special_characters():
 
 
 def get_characters_source(has_numbers, has_special_chars):
-    """Specifies the characters set from which a password can be generated"""
+    """
+    Specifies the characters set from which a password can be generated.
+
+    Args:
+        has_numbers (boolean): the return of the function
+            does_user_want_numbers()
+        has_special_chars (boolean): the return of the function
+            does_user_want_special_characters()
+
+    Returns:
+        string: the characters from which a password will be created
+    """
     characters_source = string.ascii_letters
     if has_numbers == True:
         characters_source += string.digits
@@ -77,6 +105,18 @@ def get_characters_source(has_numbers, has_special_chars):
 
 def generate_password(minimum_length, characters_source,
                       has_numbers, has_special_chars):
+    """
+    Generates a password that fits a user's criteria.
+
+    Args:
+        minimum_length (integer):
+            the password's minimum length that a user specifies
+        characters_source (string):
+            the characters from which a password will be created
+
+    Returns:
+        string: a user's password
+    """
     password = ""
     while True:
         for _ in range(minimum_length):
@@ -93,7 +133,13 @@ def generate_password(minimum_length, characters_source,
 
 
 def main():
-    """The main function that runs the whole programme"""
+    """
+    Runs the whole password generator programme.
+
+    This function encourages a user to type in their desired password's
+    criteria, generates a password that meets those specified criteria,
+    and exhibits the requested password to the user.
+    """
     minimum_length = get_password_minimum_length()
     has_numbers = does_user_want_numbers()
     has_special_chars = does_user_want_special_characters()
