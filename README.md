@@ -34,3 +34,5 @@
 
 ![Second input statement](readme-images/second-input-statement.png)
 
+## 2. 3. Third Input Statement
++ Once a user has entered a 'y' or an 'n' as their answer to the second input statement, the third input statement will emerge requesting from them to explain whether they want to have special characters in their password by typing in a 'y' or an 'n'.

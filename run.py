@@ -47,7 +47,9 @@ def does_user_want_numbers():
         does_user_want_numbers = (
             input(Fore.CYAN + "Do you want to "
                   "have numbers in your password? "
-                  "Please type in 'y' or 'n'.\n").lower()
+                  "If you want to, please type in "
+                  "'y'; if you do not, please type "
+                  "in 'n'.\n").lower()
         )
         if does_user_want_numbers == "y":
             return True
@@ -71,7 +73,9 @@ def does_user_want_special_characters():
         does_user_want_special_characters = (
             input(Fore.CYAN + "Do you want to have "
                   "special characters in your password? "
-                  "Please type in 'y' or 'n'.\n").lower()
+                  "If you want to, please type in "
+                  "'y'; if you do not, please type "
+                  "in 'n'.\n").lower()
         )
         if does_user_want_special_characters == "y":
             return True
