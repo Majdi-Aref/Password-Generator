@@ -96,7 +96,7 @@
 + By means of that I could display the text of "create-your-password" programme with colors on Heroku.
 
 # 7. Code Validation
-## 7. 1. run.py file
+## 7. 1. run.py File
 + Using CI Python Linter, I checked the run.py file of "create-your-password". 
 + Below are 2 screenshots that document this testing & validation.
 
@@ -105,8 +105,50 @@
 ![CI Python Linter report 2](readme-images/ci-python-linter-report-2.png)
 
 # 8. Test Cases 
-## 8. 1. Testing the first input statement
+## 8. 1. Testing The First Input Statement
++ Test Description
+  + This test checks the functionality of the first input statement: "Enter a number that represents the minimum length of the password that you want; the number must be greater than 5."
++ Steps
+  + A user must enter a number that is greater than 5.
++ Expected Results
+  + If a user enters letters or special characters instead of a number greater than 5, an error, red message will appear telling them that they entered letters and/or special characters; at the same time, the first input statement will appear just under that error, red message.
+  + If a user enters a number less than 6, an error, red message will appear telling them that they entered a number that is not greater than 5; at the same time, the first input statement will appear just under that error, red message.
+  + Once a user entered a number greater than 5, the second input statement will appear: "Do you want to have numbers in your password? If you want to, please type in 'y'; if you do not, please type in 'n'."
++ Actual Results
+  + The actual results are indentical to the expected results.
++ Please view the related image below.
 
+![Testing the first input statement](readme-images/testing-first-input-statement.png)
 
+## 8. 2. Testing The Second Input Statement
++ Test Description
+  + This test checks the functionality of the second input statement: "Do you want to have numbers in your password? If you want to, please type in 'y'; if you do not, please type in 'n'."
++ Steps
+  + A user must enter either a 'y' or an 'n'.
++ Expected Results
+  + If a user's input has been neither a 'y' nor an 'n', an error, red message will appear telling them that they entered neither a 'y' nor an 'n'; at the same time, the second input statement will appear just under that error, red message.
+  + Once a user entered either a 'y' or an 'n', the third input statement will appear: "Do you want to have special characters in your password? If you want to, please type in 'y'; if you do not, please type in 'n'."
++ Actual Results
+  + The actual results are indentical to the expected results.
++ Please view the related 2 images below.
 
+![Testing the second input statement 1](readme-images/testing-second-input-statement-1.png)
+
+![Testing the second input statement 2](readme-images/testing-second-input-statement-2.png)
+
+## 8. 3. Testing The Third Input Statement
++ Test Description
+  + This test checks the functionality of the third input statement: "Do you want to have special characters in your password? If you want to, please type in 'y'; if you do not, please type in 'n'."
++ Steps
+  + A user must enter either a 'y' or an 'n'.
++ Expected Results
+  + If a user's input has been neither a 'y' nor an 'n', an error, red message will appear telling them that they entered neither a 'y' nor an 'n'; at the same time, the third input statement will appear just under that error, red message.
+  + Once a user entered either a 'y' or an 'n', a green message: "Your requested password is:" will pop, and underneath it in a new line, a password in yellow will be revealed to a user.
++ Actual Results
+  + The actual results are indentical to the expected results.
++ Please view the related 2 images below.
+
+![Testing the third input statement 1](readme-images/testing-third-input-statement-1.png)
+
+![Testing the third input statement 2](readme-images/testing-third-input-statement-2.png)
 
