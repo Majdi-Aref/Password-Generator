@@ -27,12 +27,42 @@
 ![First input statement 4](readme-images/first-input-statement-4.png)
 
 ## 2. 2. Second Input Statement
-+ As soons as a user has entered a number that is greater than 5, the second, cyan input statement will be displayed, which asks them to specify if they want to have numbers in their password by typing in either 'y' or 'n'.
++ As soons as a user has entered a number that is greater than 5, the second, cyan input statement will be displayed, which asks them to specify if they want to have numbers in their password; if they want to, they must enter a 'y' and if they do not, they must enter an 'n'.
 + If a user entered neither 'y' nor 'n', an error, red message will appear and inform them that they entered neither 'y' nor 'n'; immediately afterwards, the second input statement will be one more time demonstrated reminding a user that they must enter either 'y' or 'n'.
 + As soon as a user has entered a 'y' or 'n', the third input statement will come into view.
 + Please consider the image below, which illutstrates all the scenarios above.
 
 ![Second input statement](readme-images/second-input-statement.png)
 
-## 2. 3. Third Input Statement
-+ Once a user has entered a 'y' or an 'n' as their answer to the second input statement, the third input statement will emerge requesting from them to explain whether they want to have special characters in their password by typing in a 'y' or an 'n'.
+## 2. 3. Third Input Statement & Password Generation
++ Once a user has entered a 'y' or an 'n' as their answer to the second input statement, the third input statement will emerge requesting an explanation as to whether they want to have special characters in their password; if they want to, they must enter a 'y' and if they do not, they must enter an 'n'.
++ If a user entered neither 'y' nor 'n', an error, red message will appear and inform them that they entered neither 'y' nor 'n'; immediately afterwards, the second input statement will be one more time demonstrated reminding a user that they must enter either a 'y' or an 'n'.
++ When a user has entered a 'y' or an 'n', a green message will arise, which is: "Your requested password is:" and the requested password will be revealed in a new line in yellow.
++ Beneath is a relevant image.
+
+![Third input statement & password generation](readme-images/third-input-statement.png)
+
+# 3. Future Features
++ I would develop an option in which a user could single out how difficult a password should be.
++ If I could, I would incorporate the letters, numbers, and special characters of many languages in addition to English.
++ Ordering several passwords simultaneously from the very start of the programme.
+
+# 4. Typography & Color Scheme
++ I utilized the typography that is incorporated in Heroku.
++ As for the color scheme of the programme, I imported "colorama", installed it into my Codeanywhere's workspace, and added it into the requirements.txt file so that Heroku can execute the color settings of "colorama" on the "create-your-password" programme.
++ The input statements questions and a user's answers are in cyan.
++ The error messages are in red.
++ The "Your requested password is:" message is in green.
++ The message that reveals the requested password is in yellow.
++ Kindly check the image down below that shows the color scheme of the programme.
+
+![Color scheme](readme-images/color-scheme.png)
+
+# 5. Flowcharts
++ Underneath is the flowchart of "create-your-password" programme.
+
+![Flowchart](readme-images/flowchart.png)
+
+
+
+
