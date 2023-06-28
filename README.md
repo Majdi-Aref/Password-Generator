@@ -152,3 +152,52 @@
 
 ![Testing the third input statement 2](readme-images/testing-third-input-statement-2.png)
 
+# 9. Fixed Bugs
++ I have not encountered any bugs in the "create-your-password" programme.
+
+# 10. Supported Screens & Browsers
++ I developed and tested the "create-your-password" programme on a 14-inches laptop-screen.
++ The browsers that I used are Google Chrome and Microsoft Edge.
++ Underneath is a screenshot that demonstrates how the programme looks on Google Chrome.
+
+![How the programme looks on Google Chrome](readme-images/browser.png)
+
+# 11. Deployment
+## 11. 1. Via Codeanywhere
++ Codeanywhere is a cloud-based development environment that allows you to develop, build, and deploy your website in the cloud.
++ Open an account and create a new repository on Github.
++ Open Codeanywhere workspaces, then create a new workspace for the new repository that you created on Github; Codeanywhere will save the workspace that you created.
++ Open the Codeanywhere workspace that you just created.
++ As soon as you have opened your repository's workspace in Codeanywhere, you can use a terminal to run the necessary commands to build and deploy your website.
++ You can create as many Python files as you need for your project in the root directory. 
++ Create a readme.md file for your project in the root directory.
++ Open a terminal in your Codeanywhere's workspace; in this terminal you shoud type in the following command: "python3 run.py". Once you typed it in, please press the "enter" button. Then you can test your program in the terminal.
++ Press at the same time "Control + S" to save the code you create in Codeanywhere worksace; this will automatically save it in your applicable file in your Codeanywhere workspaces. Alternatively, you can check the "Auto save" option in the "File" list of options.
++ Type in the Codeanywhere terminal the command: "git add ." to add your project's code and/or documentation that you have created during a working session of yours to your Codeanywhere workspace.
++ Type in the Codeanywhere terminal the command: "git commit -m 'what code, styling, documentation, or corrections you have made or done in your Codeanywhere workspace in just a few words'" to save your project's code and documentation in your Codeanywhere workspace.
++ Type in the Codeanywhere terminal the command: "git push" to push and save your project's code in your Github's repository.
++ If your project requires any supplementary modules, programs, or dependencies that are not automatically active in the platform that hosts you project, you must add it to the requirements.txt file in the root directory of your Codeanywhere's workspace so that the hosting platform (in this project "create-your-password" it is Heroku) will make the necessary adjustments and installations for your project to be fully functional.
++ Because I applied colorama, a Python module, on the "create-your-password" programme, I added colorama to the proper requirements.txt file.
+
+## 11. 2. Via Github
++ GitHub is a free code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
++ Open Github and sign in.
++ Using the menu on the top right corner, click on "Your repositories".
++ Create a repository for your project and give a specific name.
++ Use the link of that Github's repository to create a workspace on Codeanywhere.
++ Once you created that workspace on Codeanywhere, you can develop your project the way you want.
++ As you commit and push your project's code via Codeanywhere, as explained above, your project's code will get automatically saved in your relevant Github's respository!
+
+## 11 . 3. Via Heroku
++ Heroku is a platform that can handle backend programing languages such as Python, which Github can not!
++ Therefore, when we build a project with Python, we need a depoly it on a platform like Heroku so that we can let others see it in action!
++ You must add a new line character at the end of the text inside each input method you include in your project. In this specific project, this is most probably because I have used the Code Institute's Python template which is availabe for all Code Institute's students on Github. I am not sure if this still applies if one does not use the Code Institute's Python template. If you are interested in more details regarding this, please contact the Code Institute.
++ As stated above, you should already have put all the dependencies of your project in the requirements.txt file of your project. 
++ Now, you should type in the following command in the terminal of your Codeanywhere's workspace: "pip3 freeze > requirements.txt" and then you should press enter.
++ Once you have done that, Heroku searches an finds that file, requirements.txt, and installs all the dependencies that are listed inside it before running your project's code.
++ Please do not forget to commit and push those changes to Github!
++ Open the Heroku's website and sign up for an account.
++ In the process of signing up for an account with Heroku, I have selected "Student" as a "Role" because I am now being a student at the Code Institute. For the "Primaray development language" I have selected "Python". The rest of the signing up process with Heroku is self explanatory. 
++ 
+
+
