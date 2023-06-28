@@ -8,6 +8,7 @@
 + While creating a password, I, as a visting user, would like to be able to decide whether to include numbers and/or special characters in a password provided that letters comprise the main part of it.
 
 # 2. Existing Features
+
 ## 2. 1. First Input Statement
 + As Heroku runs "create-your-password", the first, cyan input statement will be displayed to a user.
 + This first input statment is: "Enter a number that represents the minimum length of the password that you want; the number must be greater than 5."
@@ -59,9 +60,52 @@
 ![Color scheme](readme-images/color-scheme.png)
 
 # 5. Flowcharts
-+ Underneath is the flowchart of "create-your-password" programme.
++ Underneath is the flowchart of "create-your-password" programme, thanks to www.lucidchart.com.
 
 ![Flowchart](readme-images/flowchart.png)
+
+# 6. Technology
+
+## 6. 1. Python
++ In order to create the logic of "create-your-password" programme, I exploited Python, especially its functions.
++ I stored the Python logic of the game in the run.py file.
+
+## 6. 2. Codeanywhere
++ Codeanywhere is an efficient cloud-based integrated development environment that I employed to write, review, integrate, and deploy the code of "create-your-password" without any need for any installations or configurations.
+
+## 6. 3. GitHub
++ A platform for version control and collaborative software development, which I exploited to create a central code repository for and deploy the "Password-Generator" programme; this, in turn, allows me to keep track of changes made to code and revert to previous versions if needed.
+
+## 6. 4. Heroku
++ This is a cloud-based Platform that enables developers to build, deploy, and scale modern applications. 
++ Heroku supports several programming languages, including Node.js, Ruby, Java, PHP, Python, Go, Scala, and Clojure.
++ The fact that I built "create-your-password" programme with Python is the reason why I took advantage of Heroku.
++ Heroku allows developers to focus on code instead of infrastructure and is seamlessly integrated with Github.
+
+## 6. 5. Lucidchart
++ This is the program I applied to generate the flowchart of the "create-your-password" programme.
+
+## 6. 6. CI Python Linter
++ CI Python Linter is an online website that scrutinizes and validates Python code.
++ The Code Institute made this programme available for its students; for more details about this program, please visit: https://pep8ci.herokuapp.com/.
++ Through direct input, I made use of it to check and validate the run.py file of "create-your-password" programme.
+
+## 6. 7. Colorama
++ This is a Python library that makes it easy to print colored terminal text on all platforms.
++ I imported the "colorama" library inside the run.py file, installed it into my Codeanywhere' workspace, and added it into the requirements.txt file in the root directory.
++ By means of that I could display the text of "create-your-password" programme with colors on Heroku.
+
+# 7. Code Validation
+## 7. 1. run.py file
++ Using CI Python Linter, I checked the run.py file of "create-your-password". 
++ Below are 2 screenshots that document this testing & validation.
+
+![CI Python Linter report 1](readme-images/ci-python-linter-report-1.png)
+
+![CI Python Linter report 2](readme-images/ci-python-linter-report-2.png)
+
+# 8. Test Cases 
+## 8. 1. Testing the first input statement
 
 
 
