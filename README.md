@@ -1,7 +1,7 @@
 # "create-your-password"
 + "create-your-password" is an programme that generates passwords. People who require multiple passwords for their various subscriptions would benefit from using this program.
 + I developed "create-your-password" as my Portfolio Project 3 for my full-stack software development diploma with the Code Institute in Dublin, Ireland.
-+ "create-your-password" is the name of the program on Heroku; however, its name on GitHub is "Password-Generator". In this readme.md file, I will refer to it as "create-your-password" on Heroku. Please take this into consideration.
++ "create-your-password" is the name of the program on Heroku; however, its name on GitHub is "Password-Generator". In this readme.md file, I will refer to it as "create-your-password". Please take this into consideration.
 # 1. User Stories
 +  As a visiting user, I would like to use this program to generate passwords that I can use for online subscriptions.
 + While creating a password, as a visiting user, I would like the option to include numbers and/or special characters, while ensuring that letters make up the main part of the password.
@@ -34,7 +34,7 @@
 
 ## 2. 3. Third Input Statement & Password Generation
 + Once a user has entered a 'y' or an 'n' as their answer to the second input statement, the third input statement will emerge requesting an explanation as to whether they want to have special characters in their password; if they want to, they must enter a 'y' and if they do not, they must enter an 'n'.
-+ If a user entered neither 'y' nor 'n', an error message will appear in red and inform them that they entered neither 'y' nor 'n'; immediately afterwards, the second input statement will be one more time demonstrated reminding a user that they must enter either a 'y' or an 'n'.
++ If a user entered neither 'y' nor 'n', an error message will appear in red and inform them that they entered neither 'y' nor 'n'; immediately afterwards, the third input statement will be one more time demonstrated reminding a user that they must enter either a 'y' or an 'n'.
 + When a user has entered a 'y' or an 'n', a green message will arise, which is: "Your requested password is:" and the requested password will be revealed in a new line in yellow.
 + Beneath is a relevant image.
 
@@ -57,7 +57,7 @@
 ![Color scheme](readme-images/color-scheme.png)
 
 # 5. Flowcharts
-+ Underneath is the flowchart of "create-your-password" programme, thanks to https://www.lucidchart.com/.
++ Underneath is the flowchart of "create-your-password" programme, thanks to [Lucidchart](https://www.lucidchart.com).
 
 ![Flowchart](readme-images/flowchart-1.png)
 
@@ -78,7 +78,7 @@
 + This is the program I used to generate the flowchart of the "create-your-password" program.
 ## 6. 6. CI Python Linter
 + CI Python Linter is an online website that scrutinizes and validates Python code.
-+ The Code Institute made this program available for its students; for more details about this program, please visit: https://pep8ci.herokuapp.com/.
++ The Code Institute made this program available for its students; for more details about this program, please visit: [CI Python Linter](https://pep8ci.herokuapp.com/).
 + I used it to check and validate the run.py file of the "create-your-password" program by directly inputting the code.
 ## 6. 7. Colorama
 + This is a Python library that facilitates printing colored text in the terminal across different platforms.
@@ -165,7 +165,7 @@
 + Press "Control + S" simultaneously to save the code you created in the Codeanywhere workspace. This will automatically save it in the applicable file in your Codeanywhere workspace. Alternatively, you can check the "Auto save" option in the "File" list of options.
 + In the Codeanywhere terminal, use the command git add . to add your project's code and/or documentation created during your working session to your Codeanywhere workspace.
 + Use the command git commit -m 'Brief description of the changes you made in your Codeanywhere workspace' in the Codeanywhere terminal to save your project's code and documentation in your Codeanywhere workspace.
-+ Use the command git push in the Codeanywhere terminal to push and save your project's code to your GitHub repository.
++ Use the command git push in the Codeanywhere terminal to save and push your project's code to your GitHub repository.
 + If your project requires any supplementary modules, programs, or dependencies that are not automatically available in the hosting platform (in this case, Heroku), you must add them to the requirements.txt file in the root directory of your Codeanywhere workspace. This allows the hosting platform to make the necessary adjustments and installations for your project to be fully functional.
 + Since the "create-your-password" program uses the Python module "colorama," make sure to add "colorama" to the requirements.txt file.
 
@@ -188,7 +188,7 @@
 + Please do not forget to commit and push those changes to Github!
 + How can you sign up for an account by Heroku?
   + Open the Heroku's website.
-  + In the process of signing up for an account with Heroku, I have selected "Student" as a "Role" because I am now being a student at the Code Institute. For the "Primaray development language" I have selected "Python" as I have written the "create-your-password" programme with Python. 
+  + In the process of signing up for an account with Heroku, I have selected "Student" as a "Role" because I am now being a student at the Code Institute. For the "Primary development language" I have selected "Python" as I have written the "create-your-password" programme with Python. 
   + Once you have finished entering the details of your signing up, click on "CREATE FREE ACCOUNT", which is on the bottom right of the sign-up page.
   + Heroku will send you then a confirmation email; open it and click on the link provided to confirm that the email-address that you used as you have signed up is yours.
   + Once you've done that, Heroku will take you to another page to enter your password. When you have entered your password, click on "SET PASSWORD AND LOG IN". A welcome message will open, on which you should click on "CLICK HERE TO PROCEED".
@@ -202,7 +202,7 @@
   + Click on "Choose a region" and select your region.
   + Then, click on the "Create app" button.
   + A new page for the app that you have just created will open.
-+ How can I set up an app' page that I have just created?
++ How can I set up an app's page that I have just created?
   + On the app's page that you have just created, you can find a big menu bar on the top left.
   + You should focus on two sections in that menu bar: "Settings" and "Deploy."
   + It's important to get your settings section done before you deploy your code.
@@ -249,34 +249,41 @@
 
 ## 12. 1. Overall Plan
 + Below is a link to a YouTube video from which I learned the overall plan on how to develop a program that can generate passwords.
++ [Password Generator](https://www.youtube.com/watch?v=XCIBOl3FTKo)
 + https://www.youtube.com/watch?v=XCIBOl3FTKo
 ## 12. 2. Colorama
 + My mentor at the Code Institute, Rohit Sharma, has recommended that I apply the colorama module to my project "create-your-passwor".
 ## 12. 3. isdigit() function
 + Below is a link to where isdigit() function is used in an if statement (Example-3)
++ [isdigit() function](https://linuxhint.com/python-isdigit-function/)
 + https://linuxhint.com/python-isdigit-function/
 ## 12. 4. "continue" keyword inside an "if statement" inside a "while True" loop
 + Below is a link to where a while True loop is used in combination with an if statement. 
++ ["continue" within "if statement" within "While True"](https://www.askpython.com/python/python-while-loop)
 + https://www.askpython.com/python/python-while-loop
 + It is demonstrated in the link above inside the if statement, how both the "continue" and "break" keywords were utilized to manipulate flow of the while True loop.
 + I executed the "continue" keyword within an if statement inside a while True loop in four functions of "create-your-password" programme.
 ## 12. 5. "return" statement at the end of a "while True" loop inside a function
 + Below is a link that explains the difference between "return" and "break" in Python.
++ ["return" at the end of "while True" within a function](https://stackoverflow.com/questions/28854988/what-is-the-difference-between-return-and-break-in-python#:~:text=break%20is%20used%20to%20end,the%20code%20was%20executing%20previously)
 + https://stackoverflow.com/questions/28854988/what-is-the-difference-between-return-and-break-in-python#:~:text=break%20is%20used%20to%20end,the%20code%20was%20executing%20previously.
 + In the "get_password_minimum_length()" function, I applied the "return" statement inside the "while True" loop because I did not need to process the return value any further within that function. Had I needed to further process the return value of that function within that function, I would have replaced that "return" statement with a "break" statement and added "return desired_minimum_length" outside the "while True" loop inside the function (which means: the "while True loop and the "return desired_minimum_length" would have been inserted at the same indentation level inside the function).
 + What is mentioned above goes for the "generate_password()" function.
-+ As for the "does_user_want_numbers()" function and the "does_user_want_special_characters()" function, there was no need for a "break" statement because I used a "return" statement. 
-+ After the "returen" statement, I needed only a "continue" statement to force each loop in these two functions to return either True or False.
++ As for the "does_user_want_numbers()" function and the "does_user_want_special_characters()" function, there was no need for a "break" statement because I used a "return" statement. After the "returen" statement, I needed only a "continue" statement to force each loop in these two functions to return either True or False.
 ## 12. 6. Python string constants
 + Below is a link to Python string constants.
++ [Python string constants](https://docs.python.org/3/library/string.html)
 + https://docs.python.org/3/library/string.html
 + I used three of these constants in the "create-your-password" programme: string.ascii_letters, string.digits, and string.punctuation.
 ## 12. 7. isdigit() method with a for loop inside any() function
 + Below are two links that show how to use a .isdigit() method in combination with a for loop inside an any() function to verify if a string contains a number.
++ [isdigit() and for loop within any() function](https://stackoverflow.com/questions/19859282/check-if-a-string-contains-a-number)
 + https://stackoverflow.com/questions/19859282/check-if-a-string-contains-a-number
++ [isdigit() and for loop within any() function](https://www.freecodecamp.org/news/python-any-and-all-functions-explained-with-examples/)
 + https://www.freecodecamp.org/news/python-any-and-all-functions-explained-with-examples/
 ## 12. 8. "in" keyword with a for loop inside any() function
 + Below is a link that shows how to utilize the "in" keyword in combination with a for loop inside an any() function to verify if a string a special character.
++ [in keyword and for loop within any() function](https://stackoverflow.com/questions/19970532/how-to-check-a-string-for-a-special-character)
 + https://stackoverflow.com/questions/19970532/how-to-check-a-string-for-a-special-character
 ## 12. 9. if __name__ == "__main__": main()
 + My Mentor, Rohit Sharma, has recommended applying this piece of code at the end of the "create-your-password" programme.
