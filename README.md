@@ -62,7 +62,7 @@
 # 5. Flowcharts
 + Underneath is the flowchart of "create-your-password" programme, thanks to www.lucidchart.com.
 
-![Flowchart](readme-images/flowchart.png)
+![Flowchart](readme-images/flowchart-1.png)
 
 # 6. Technology
 
