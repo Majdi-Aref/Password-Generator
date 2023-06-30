@@ -196,8 +196,118 @@
 + Now, you should type in the following command in the terminal of your Codeanywhere's workspace: "pip3 freeze > requirements.txt" and then you should press enter.
 + Once you have done that, Heroku searches an finds that file, requirements.txt, and installs all the dependencies that are listed inside it before running your project's code.
 + Please do not forget to commit and push those changes to Github!
-+ Open the Heroku's website and sign up for an account.
-+ In the process of signing up for an account with Heroku, I have selected "Student" as a "Role" because I am now being a student at the Code Institute. For the "Primaray development language" I have selected "Python". The rest of the signing up process with Heroku is self explanatory. 
-+ 
++ How can you sign up for an account by Heroku?
+  + Open the Heroku's website.
+  + In the process of signing up for an account with Heroku, I have selected "Student" as a "Role" because I am now being a student at the Code Institute. For the "Primaray development language" I have selected "Python" as I have written the "create-your-password" programme with Python. 
+  + Once you have finished entering the details of your signing up, click on "CREATE FREE ACCOUNT", which is on the bottom right of the sign-up page.
+  + Heroku will send you then a confirmation email; open it and click on the link provided to confirm that the email-address that you used as you have signed up is yours.
+  + Once you've done that, Heroku will take you to a another page to enter your password. When you have entered your password, click on "SET PASSWORD AND LOG IN". A welcome message will open, on which you should click on "CLICK HERE TO PROCEED".
+  + After that, the page of "Terms of Service" of Heroku will open; click on "Accept", which you can find at the mid-bottom of that page.
+  + Now the dashboard page of your Heroku account will pop. Your apps will be listed on this page. You can have up to 5 apps with your free account; if you want to to have more, you will need to buy a certain paid service by Heroku.
++ How can you create an app by Heroku?
+  + From the Heroku's dashboard, click the “Create new app” button.
+  + A "Create New App" page will open.
++ How can I set up the "Create New App" page?
+  + Enter a unique name for your app in the input field "App name". I selected "create-your-password" for my project.
+  + Click on "Choose a region" and select your region.
+  + Then click on the "Create app" button.
+  + A new page for the app that you have just created will open.
++ How can I set up an app' page that I have just created?
+  + On the app's page that you have just created you can find a big menu bar on the top left.
+  + You should focus on two sections on that menu bar: "Settings" and "Deploy".
+  + It's important to get your settings section done before you deploy your code.
++ How can I set up the "Settings" section?
+  + Click on the "Settings" seciton.
+  + On the "Settings" section, scroll down to the "Config Vars" subsection.
++ How can I set up the "Config Vars" subsection?
+  + Click on "Reveal Config Vars" on the left to be able to create a config var.
+  + Enter "PORT" in the field for "KEY"; enter "8000" in the field for "VALUE", then click "Add".
++ On the "Settings" section, scroll down to the "Buildpacks" subsection.
++ How can I set up the "Buildpacks" subsection?
+  + Click on "Add buildpack" on the right; a small window will open.
+  + Select "python" and then click on "Save changes".
+  + Click again on "Add buildpack" on the right; a small window like the one above will open.
+  + Select "node.js" and then click on "Save changes".
+  + Make sure that your buildpacks are in the following order: Python on top, and node.js underneath.
++ Now that you have configured your the project's "Settings", you should go to the "Deploy" section.
++ Click on the "Deploy" section.
++ How can I set up the "Deploy" section?
+  + Go back to you app' page.
+  + Click on "Deploy".
+  + Scroll down to the "Deployment method" on the left.
++ How can I set up the "Deployment method" subsection on the "Deploy" section?
+  + On your app's page, click on Deploy, then scroll down a bit to reach "Deployment method".
+  + Select "GitHub".
+  + Click on the "Connect to GitHub" button.
+  + The "Connect to Github" subsection will open.
+  + In the "Connect to GitHub" subsection, there is a field on the right side for "repo-name".
+  + In he "repo-name" field, type in your GitHub's repository name that you want to deply on Heroku. I typed in "Password-Generator".
+  + Then click on "Search"; after that, click on "Connect".
+  + This will link Heroku to your GitHub's repository code.
++ Scroll down a little to reach "Automatic deploys" subsection.
+  + If you want to choose this option, click on "Enable Automatic Deploys". In this case, Heroku will rebuild your app every time you push a new change to your code to Github.
++ Underneath "Automatic deploys" you can find the "Manual deploy" subsection.
+  + If you want to choose this option, click on "Deploy Branch".
+  + As soon as your app has been deployed, a confirmation message will appear saying: "Your app was successfully deployed".
+  + Just under that confirmation message, a "View" button will appear.
+  + Click on that "View" button to open your deployed app on Heroku in a new tab!
++ I applied the manual deployment method at first; then I applied automatic deployment method.
++ After deployment, you can directly start your app.
++ If you want to restart your app, click on "RUN PROGRAM" on the top left.
+
+# 12. Credits
+## 12. 1. Overall Plan
++ Below is a link to to a YouTube video, from which I learned the overall plan of how to develop a program that can generate passwords. 
++ https://www.youtube.com/watch?v=XCIBOl3FTKo
+
+## 12. 2. Colorama
++ My Code Institute's mentor, Rohit Sharma, has recommended that I apply the colorama module to my project "create-your-passwor".
+
+## 12. 3. isdigit() function
++ Below is a link to where isdigit() function is used in an if statement (Example-3)
++ https://linuxhint.com/python-isdigit-function/
+
+## 12. 4. "continue" keyword inside an "if statement" inside a "while True" loop
++ Below is a link to where a while True loop is used in combination with an if statement. 
++ https://www.askpython.com/python/python-while-loop
++ It is demonstrated in the link above inside the if statement, how both the "continue" and "break" keywords were utilized to manipulate flow of the while True loop.
++ I executed the "continue" keyword inside an if statement inside a while True loop in 4 functions of "create-your-password" programme.
+
+## 12. 5. "return" statement at the end of a "while True" loop inside a function
++ Below is a link that explains the difference between "return" and "break" in Python.
++ https://stackoverflow.com/questions/28854988/what-is-the-difference-between-return-and-break-in-python#:~:text=break%20is%20used%20to%20end,the%20code%20was%20executing%20previously.
++ At the of the "get_password_minimum_length()" function, I applied the "return" statement inside the "while True" loop because I did not need to further process the return value of that function. Had I needed to further process the return value of that function inside the function, I would have replaced that "return" statement with a "break" statement and added "return desired_minimum_length" outside the "while True" loop inside the function (which means: the "while True loop and the "return desired_minimum_length" would have been inserted at the same indentation level inside the function).
++ What is mentioned above goes for the "generate_password()" function.
++ In the "does_user_want_numbers()" function and the "does_user_want_special_characters()" function, there was no need for a "break" statement because I executed a "return" statement. I needed only a "continue" statement afterwards to force each loop in those two functions to return either True or False.
+
+## 12. 6. Python string constants
++ Below is a link to Python string constants.
++ https://docs.python.org/3/library/string.html
++ I used 3 of them in the "create-your-password" programme (string.ascii_letters, string.digits, and string.punctuation)
+
+## 12. 7. isdigit() method with a for loop inside any() function
++ Below are 2 links that that show how to use a .isdigit() method in combination with a for loop inside an any() function to verify if a string contains a number
++ https://stackoverflow.com/questions/19859282/check-if-a-string-contains-a-number
++ https://www.freecodecamp.org/news/python-any-and-all-functions-explained-with-examples/
+
+## 12. 8. "in" keyword with a for loop inside any() function
++ Below are 2 links that that show how to utilizes the "in" keyword in combination with a for loop inside an any() function to verify if a string a special character.
++ https://stackoverflow.com/questions/19970532/how-to-check-a-string-for-a-special-character
+
+## 12. 9. if __name__ == "__main__": main()
++ My Mentor Rohit Sharma has recommended to apply this piece of code at the end of "create-your-password" programme.
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
 
